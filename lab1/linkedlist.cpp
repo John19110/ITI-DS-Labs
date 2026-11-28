@@ -146,7 +146,6 @@ class LinkedList {
 int main() {
   LinkedList list;
 
-  // 1. Test add()
   cout << "\n===== Testing add() =====\n";
 
   list.add(10);
@@ -156,12 +155,10 @@ int main() {
 
   list.Display();
 
-  // 2. Test GetCount()
   cout << "\n===== Testing GetCount() =====\n";
 
   cout << "Count: " << list.GetCount() << endl;
 
-  // 3. Test search()
   cout << "\n===== Testing search() =====\n";
 
   Node* result = list.search(20);
@@ -171,48 +168,41 @@ int main() {
   else
     cout << "Not found" << endl;
 
-  // 4. Test InsertAfter()
   cout << "\n===== Testing InsertAfter() =====\n";
 
   list.InsertAfter(25, 20);
 
   list.Display();
 
-  // 5. Test InsertBefore()
   cout << "\n===== Testing InsertBefore() =====\n";
 
   list.InsertBefore(5, 10);
 
   list.Display();
 
-  // 6. Test GetDataByIndex()
   cout << "\n===== Testing GetDataByIndex() =====\n";
 
   cout << "Index 0: " << list.GetDataByIndex(0) << endl;
   cout << "Index 2: " << list.GetDataByIndex(2) << endl;
   cout << "Index 5: " << list.GetDataByIndex(5) << endl;
 
-  // 7. Test invalid indexes
   cout << "\n===== Testing Invalid Indexes =====\n";
 
   cout << "Index -1: " << list.GetDataByIndex(-1) << endl;
   cout << "Index 100: " << list.GetDataByIndex(100) << endl;
 
-  // 8. Insert before head
   cout << "\n===== Testing InsertBefore Head =====\n";
 
   list.InsertBefore(1, 5);
 
   list.Display();
 
-  // 9. Insert after tail
   cout << "\n===== Testing InsertAfter Tail =====\n";
 
   list.InsertAfter(50, 40);
 
   list.Display();
 
-  // 10. Final count
   cout << "\n===== Final Result =====\n";
 
   cout << "Final count: " << list.GetCount() << endl;
